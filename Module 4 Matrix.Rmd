@@ -1,0 +1,28 @@
+---
+title: "Module 4 Matrix"
+output: html_document
+---
+
+```
+
+m <- matrix(data = 1:80, nrow = 8, ncol = 10, byrow = FALSE)
+
+x<-m[c(1,2,3,4,5,6,7,8), c(2,3,6)]
+x
+#produces matrix with first c() as rows and second c() columns
+
+x<-m[c(6,8), c(1,2,3,4,5,6,7,8,9,10)]
+x
+
+x<-m[c(2,3,4,5,6), c(2,3,4,5,6,7,8,9)]
+x
+#matrix with row 2, column2 to row 6, column 9)
+
+a<- array(data = 400:1, dim = c(5,5,4,4))
+a
+
+a[1, 1, 1, 2]
+
+a[2, 3, 2,]
+
+a[1:5, 1:5, 3, 3]
