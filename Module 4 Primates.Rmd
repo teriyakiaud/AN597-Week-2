@@ -4,7 +4,7 @@ output: html_document
 ---
 
 
-l<-list(c("Primates
+l<-list("Primates
 
     Haplorhini
         Anthropoidea
@@ -28,10 +28,11 @@ l<-list(c("Primates
             Indriidae
             Lemuridae
             Daubentoniidae"
-))
-
+)
+```{r}
 primate<-list(haplorhini, strepsirhini)
 names(primate)<-c("haplorhini","strepsirhini")
+
 #name ranks each category under the previous one
 
 haplorhini<-list(anthropoidea, tarsioidea)
@@ -41,7 +42,7 @@ strepsirhini<-list(lorisoidea, lemuroidea)
 names(strepsirhini)<-c("lorisoidea", "lemuroidea")
 
 anthropoidea<-list(platyrrhini, catarrhini)
-names(anthroidea)<-c("platyrrhini, catarrhini")
+names(anthropoidea)<-c("platyrrhini, catarrhini")
 
 tarsioidea<-list("tarsiidae")
 names(tarsioidea)<-c("tarsiidae")
@@ -57,23 +58,10 @@ names(platyrrhini)<-c("cebidae", "atelidae", "pitheciidae")
 
 catarrhini<-list("cercopithecidae", "hylobatidae", "hominindae")
 names(catarrhini)<-c("cercopithecidae", "hylobatidae", "hominindae")
-
-
+```
+#using the names() function will list the selected values under that specific name
+```{r}
 l<-list(list(primate), list(haplorhini), list(anthropoidea), list(tarsioidea), list(platyrrhini), list(catarrhini), list(strepsirhini), list(lorisoidea), list(lemuroidea) )
 
 l
-
-
-
-
-
-s <- c("this", "is", "a", "vector", "of", "strings")
-m <- matrix(data = 1:40, nrow = 5, ncol = 8)  
-# this is a matrix
-b <- FALSE
-list <- list(s, m, b)
-list
-#test case
-
-list[[2]][2, 6]
-str(list)
+```
