@@ -2,6 +2,7 @@
 title: "Mod4 DataFrame 2"
 output: html_document
 ---
+```{r}
 3, 0, 1 ,23, 1, 2, 33, 1, 1, 42, 0, 1, 41, 0, 2
 
 m1<- matrix(data=c(3, 0, 1 ,23, 1, 2, 33, 1, 1, 42, 0, 1, 41, 0, 2), nrow = 5, ncol = 3, byrow = TRUE)
@@ -9,14 +10,18 @@ m1
 
 df<-data.frame(m1)
 df
+```
 #use this command to change matrix to dataframe
+```{r}
 str(df)
 
-df1<-as.logical(df[c(1,2,3,4,5) , 2])
+df1<-as.logical(df[c(1:5) , 2])
 df1
+```
 #commands as.___() changes the class of your values. This used logical to change 1s and 0s to TRUE or FALSE
-
-df2<-as.factor(df[c(1,2,3,4,5) , 3])
+```{r}
+df2<-as.factor(df[c(1:5) , 3])
 df2
 
 str(c(df,df1,df2))
+```
